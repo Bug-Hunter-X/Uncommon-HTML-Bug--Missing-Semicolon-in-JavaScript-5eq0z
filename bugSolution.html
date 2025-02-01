@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    document.getElementById('myDiv').style.display = 'none';
+    // Bug fixed: Semicolon added
+    document.getElementById('myDiv').style.visibility = 'visible'; 
+  </script>
+</body>
+</html>
